@@ -22,10 +22,10 @@ public class ControllerAspect {
 		long b = System.currentTimeMillis();
 		try {
 			Object proceed = pjp.proceed();
-			long a = System.currentTimeMillis();
-			logger.debug(getMethod(pjp).getName()+" use tims "+(a-b)+"ms");
+			logger.debug(getMethod(pjp)+" use tims "+(System.currentTimeMillis()-b)+"ms");
 			return proceed;
 		} catch (Exception e) {
+			logger.debug(getMethod(pjp)+" use tims "+(System.currentTimeMillis()-b)+"ms");
 			return exceptionHandler(pjp, e);
 		}
 	}
