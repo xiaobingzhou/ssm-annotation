@@ -10,7 +10,7 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<spring.version>4.3.18.RELEASE</spring.version>
+		<spring.version>5.3.19</spring.version>
 		<aspectjweaver.version>1.8.13</aspectjweaver.version>
 		<jackson.version>2.8.8</jackson.version>
 		<mybatis.version>3.4.1</mybatis.version>
